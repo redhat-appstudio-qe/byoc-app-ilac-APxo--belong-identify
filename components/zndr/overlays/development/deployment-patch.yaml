@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: zndr
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-ukls-tenant/byoc-app-ilac/zndr@sha256:49c089da281bbae8e124531db6a052854a25f6a16e4eca9d74fb88f3c40be367
+        name: my-java-quarkus
+        resources: {}
+status: {}
