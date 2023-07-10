@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: zndr
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-ukls-tenant/byoc-app-ilac/zndr@sha256:49c089da281bbae8e124531db6a052854a25f6a16e4eca9d74fb88f3c40be367
         name: my-java-quarkus
         ports:
         - containerPort: 8081
